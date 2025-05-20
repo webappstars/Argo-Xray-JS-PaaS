@@ -72,8 +72,17 @@ generate_config() {
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "none"
+        "network": "tcp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/${WSPATH}-vless",
+          "method": "GET"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
       }
     },
     {
@@ -87,10 +96,16 @@ generate_config() {
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "none",
-        "wsSettings": {
-          "path": "/${WSPATH}-vless"
+        "xhttpSettings": {
+          "path": "/${WSPATH}-vless",
+          "method": "GET"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "sniffing": {
@@ -109,9 +124,16 @@ generate_config() {
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/${WSPATH}-vmess"
+        "network": "tcp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/${WSPATH}-vmess",
+          "method": "GET"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "sniffing": {
@@ -130,10 +152,16 @@ generate_config() {
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "none",
-        "wsSettings": {
-          "path": "/${WSPATH}-trojan"
+        "xhttpSettings": {
+          "path": "/${WSPATH}-trojan",
+          "method": "GET"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "sniffing": {
@@ -156,9 +184,16 @@ generate_config() {
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/${WSPATH}-shadowsocks"
+        "network": "tcp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/${WSPATH}-shadowsocks",
+          "method": "GET"
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "sniffing": {
@@ -192,6 +227,7 @@ generate_config() {
     ]
   }
 }
+
 EOF
 }
 
