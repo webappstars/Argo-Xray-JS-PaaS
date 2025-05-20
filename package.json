@@ -1,22 +1,16 @@
 {
-  "name": "express-hello-world",
+  "name": "node20-compatible-server",
   "version": "1.0.0",
-  "description": "Express Hello World",
+  "description": "Node.js 20 compatible server with basic auth and keepalive logic",
+  "type": "module",
   "main": "index.js",
-  "repository": "https://github.com/fscarmen2/Argo-X-JS-PaaS",
-  "author": "fscarmen",
-  "license": "MIT",
-  "private": false,
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "basic-auth": "^2.0.1",
     "express": "^4.18.2",
-    "http-proxy-middleware": "^3.0.0-beta.0",
-    "request": "^2.88.2",
-    "basic-auth": "^2.0.1"
-  },
-  "engines": {
-    "node": ">=14"
+    "http-proxy-middleware": "^2.0.6",
+    "request": "^2.88.2"
   }
 }
