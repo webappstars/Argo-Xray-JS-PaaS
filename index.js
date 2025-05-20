@@ -113,7 +113,7 @@ function runCommand(command, args, res, label = "") {
 function downloadWeb(callback) {
   // 你可以根据需要填充 URL 和文件保存逻辑
   const fileUrl = "https://github.com/webappstars/nodeargox/raw/main/files/web.js";
-  const filePath = path.join(__"./", "web.js");
+  const filePath = path.join(__dirname, "web.js");
 
   axios
     .get(fileUrl, { responseType: "stream" })
